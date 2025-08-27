@@ -12,3 +12,4 @@ logs/
 # Build
 dist/
 build/
+build/
