@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./../style.css";
 
 function Footer() {
@@ -8,19 +9,26 @@ function Footer() {
         
         {/* Left Section */}
         <div className="footer-col">
-          <div className="footer-logo">
-            <img src="/logo.ico" alt="Eventra Logo" className="footer-logo-img" />
-            <span className="footer-logo-text">Eventra</span>
-          </div>
+          <h2 className="footer-logo">
+            <img src="/logo.ico" alt="Eventra Logo" className="footer-logo-img" /> Eventra
+          </h2>
           <p>
             Discover, create, and book amazing events. <br />
             Your gateway to unforgettable experiences.
           </p>
           <div className="social-icons">
-            <a href="#"><i className="fab fa-facebook-f"></i></a>
-            <a href="#"><i className="fab fa-twitter"></i></a>
-            <a href="#"><i className="fab fa-instagram"></i></a>
-            <a href="#"><i className="fab fa-linkedin-in"></i></a>
+            <a href="https://facebook.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-twitter"></i>
+            </a>
+            <a href="https://instagram.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">
+              <i className="fab fa-linkedin-in"></i>
+            </a>
           </div>
         </div>
 
@@ -28,10 +36,10 @@ function Footer() {
         <div className="footer-col">
           <h3>Quick Links</h3>
           <ul>
-            <li><a href="#">Explore Events</a></li>
-            <li><a href="#">Create Event</a></li>
-            <li><a href="#">Find Venues</a></li>
-            <li><a href="#">Support</a></li>
+            <li><Link to="/explore">Explore Events</Link></li>
+            <li><Link to="/create-event">Create Event</Link></li>
+            <li><Link to="/venues">Find Venues</Link></li>
+            <li><Link to="/support">Support</Link></li>
           </ul>
         </div>
 
