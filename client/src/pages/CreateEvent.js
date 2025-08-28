@@ -21,6 +21,8 @@ function CreateEvent() {
     ticketPrice: "",
   });
 
+  const [showPreview, setShowPreview] = useState(false);
+
   // Handle Input Changes
   const handleChange = (e) => {
     const { name, value, files } = e.target;
@@ -112,9 +114,31 @@ function CreateEvent() {
           <p>Total Price (incl. Fee): {formData.ticketPrice ? (formData.ticketPrice * 1.02).toFixed(2) : "0"}</p>
           <div className="buttons">
             <button className="btn-back" onClick={prevStep}>⬅ Back</button>
-            <button className="btn-outline">Preview Event</button>
+            <button className="btn-outline" onClick={() => setShowPreview(true)}>Preview Event</button>
             <button className="btn-outline">Save Draft</button>
             <button className="btn-primary">Publish Event</button>
+          </div>
+        </div>
+      )}
+
+      {/* Preview Modal */}
+      {showPreview && (
+        <div className="preview-modal">
+          <div className="preview-content">
+            <h2>👀 Event Preview</h2>
+            <h3>{formData.title || "Untitled Event"}</h3>
+            <p>{formData.description || "No description provided."}</p>
+            <p><strong>Category:</strong> {formData.category}</p>
+            <p><strong>Tags:</strong> {formData.tags}</p>
+            <p><strong>Schedule:</strong> {formData.startDate} {formData.startTime} - {formData.endDate} {formData.endTime}</p>
+            <p><strong>Location:</strong> {formData.venueName}, {formData.address}, {formData.city}</p>
+            <p><strong>Tickets:</strong> {formData.currency} {formData.ticketPrice}</p>
+            <p><strong>Total (incl. fee):</strong> {formData.ticketPrice ? (formData.ticketPrice * 1.02).toFixed(2) : "0"} {formData.currency}</p>
+            
+            <div className="buttons">
+              <button className="btn-back" onClick={() => setShowPreview(false)}>Close</button>
+              <button className="btn-primary">Publish Event</button>
+            </div>
           </div>
         </div>
       )}
