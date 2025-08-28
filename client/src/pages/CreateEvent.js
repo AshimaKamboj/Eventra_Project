@@ -64,7 +64,7 @@ function CreateEvent() {
           </select>
           <input type="text" name="tags" placeholder="Tags (comma separated)" value={formData.tags} onChange={handleChange} />
           <input type="file" name="image" onChange={handleChange} />
-          <button onClick={nextStep}>Next</button>
+          <button className="btn-next" onClick={nextStep}>Next ➡</button>
         </div>
       )}
 
@@ -78,8 +78,8 @@ function CreateEvent() {
           <input type="time" name="endTime" value={formData.endTime} onChange={handleChange} />
           <input type="number" name="capacity" placeholder="Expected Capacity" value={formData.capacity} onChange={handleChange} />
           <div className="buttons">
-            <button onClick={prevStep}>Back</button>
-            <button onClick={nextStep}>Next</button>
+            <button className="btn-back" onClick={prevStep}>⬅ Back</button>
+            <button className="btn-next" onClick={nextStep}>Next ➡</button>
           </div>
         </div>
       )}
@@ -92,8 +92,8 @@ function CreateEvent() {
           <input type="text" name="address" placeholder="Address" value={formData.address} onChange={handleChange} />
           <input type="text" name="city" placeholder="City" value={formData.city} onChange={handleChange} />
           <div className="buttons">
-            <button onClick={prevStep}>Back</button>
-            <button onClick={nextStep}>Next</button>
+            <button className="btn-back" onClick={prevStep}>⬅ Back</button>
+            <button className="btn-next" onClick={nextStep}>Next ➡</button>
           </div>
         </div>
       )}
@@ -111,7 +111,7 @@ function CreateEvent() {
           <p>Platform Fee (2%): {formData.ticketPrice ? (formData.ticketPrice * 0.02).toFixed(2) : "0"}</p>
           <p>Total Price (incl. Fee): {formData.ticketPrice ? (formData.ticketPrice * 1.02).toFixed(2) : "0"}</p>
           <div className="buttons">
-            <button onClick={prevStep}>Back</button>
+            <button className="btn-back" onClick={prevStep}>⬅ Back</button>
             <button className="btn-outline">Preview Event</button>
             <button className="btn-outline">Save Draft</button>
             <button className="btn-primary">Publish Event</button>
