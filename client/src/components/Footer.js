@@ -8,7 +8,7 @@ function Footer() {
         
         {/* Left Section */}
         <div className="footer-col">
-          <h2 className="footer-logo">📅 Eventra</h2>
+          <h2 className="footer-logo">📅 Event</h2>
           <p>
             Discover, create, and book amazing events. <br />
             Your gateway to unforgettable experiences.
