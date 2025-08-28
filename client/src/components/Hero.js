@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import "./../style.css";
 
 function Hero() {
@@ -23,8 +24,8 @@ function Hero() {
 
       {/* Buttons below search */}
       <div className="hero-buttons">
-        <button className="btn-outline">🎫 Explore Events</button>
-        <button className="btn-outline">➕ Create Event</button>
+        <Link to="/explore" className="btn-outline">🎫 Explore Events</Link>
+        <Link to="/create-event" className="btn-outline">➕ Create Event</Link>
       </div>
     </section>
   );

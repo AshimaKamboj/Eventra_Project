@@ -47,8 +47,8 @@ function Footer() {
         <div className="footer-col">
           <h3>Support</h3>
           <p>📧 support@eventra.com</p>
-          <p>📞 +1 (555) 123-4567</p>
-          <p>📍 San Francisco, CA</p>
+          <p>📞 1234567890</p>
+          <p>📍 Chitkara University, Rajpura</p>
         </div>
 
         {/* Newsletter */}

@@ -937,4 +937,24 @@ a[href="#"]:focus {
   font-weight: bold;
   color: #ff4b2b; /* brand color */
 }
+.hero-buttons a {
+  text-decoration: none;   /* remove underline */
+  display: inline-block;   /* behave like button */
+}
+
+.hero-buttons .btn-outline {
+  border: 2px solid #444;
+  padding: 10px 20px;
+  border-radius: 8px;
+  background: transparent;
+  color: #444;
+  font-weight: 600;
+  cursor: pointer;
+  transition: 0.3s ease-in-out;
+}
+
+.hero-buttons .btn-outline:hover {
+  background: #444;
+  color: #fff;
+}
 
