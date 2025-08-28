@@ -27,7 +27,7 @@ function Support() {
           <span className="icon">📞</span>
           <h3>Phone Support</h3>
           <p>Talk to our team</p>
-          <p className="highlight">+1 (555) 123-4567</p>
+          <p className="highlight">1234567890</p>
           <small>Mon-Fri, 9AM-6PM EST</small>
         </div>
 
