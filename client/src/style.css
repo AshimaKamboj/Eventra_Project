@@ -958,3 +958,183 @@ a[href="#"]:focus {
   color: #fff;
 }
 
+/* ===== Create Event Form ===== */
+.create-event {
+  max-width: 900px;
+  margin: 50px auto;
+  padding: 20px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.form-title {
+  font-size: 2rem;
+  text-align: center;
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.form-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  margin-bottom: 30px;
+  color: #555;
+}
+
+/* Tabs */
+.tabs {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 25px;
+  border-bottom: 2px solid #eee;
+  gap: 10px;
+}
+
+.tabs button {
+  flex: 1;
+  padding: 12px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: #f7f7f7;
+  color: #333;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  border-radius: 6px 6px 0 0;
+}
+
+.tabs button.active {
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  color: #fff;
+}
+
+/* Card */
+.form-card {
+  background: linear-gradient(to bottom right, #faf5ff, #fdf2f8);
+  border-radius: 12px;
+  padding: 25px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+  margin-bottom: 25px;
+}
+
+.form-card h2 {
+  margin-bottom: 20px;
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+
+/* Inputs */
+.form-card input,
+.form-card textarea,
+.form-card select {
+  width: 100%;
+  padding: 12px 15px;
+  margin-bottom: 18px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 1rem;
+  outline: none;
+  transition: border 0.3s ease;
+}
+
+.form-card input:focus,
+.form-card textarea:focus,
+.form-card select:focus {
+  border-color: #a855f7;
+  box-shadow: 0 0 5px rgba(168, 85, 247, 0.4);
+}
+
+textarea {
+  min-height: 100px;
+  resize: vertical;
+}
+
+/* Buttons */
+.buttons {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 20px;
+  gap: 10px;
+}
+
+button {
+  cursor: pointer;
+}
+
+.btn-outline {
+  padding: 10px 16px;
+  background: #fff;
+  border: 2px solid #a855f7;
+  color: #a855f7;
+  border-radius: 8px;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline:hover {
+  background: #a855f7;
+  color: #fff;
+}
+
+.btn-primary {
+  padding: 10px 16px;
+  background: linear-gradient(135deg, #a855f7, #ec4899);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+  opacity: 0.9;
+}
+
+/* File input style */
+input[type="file"] {
+  border: 2px dashed #ccc;
+  padding: 15px;
+  background: #fafafa;
+  text-align: center;
+  cursor: pointer;
+}
+
+input[type="file"]::-webkit-file-upload-button {
+  display: none;
+}
+
+/* Pricing summary */
+.form-card p {
+  font-size: 0.95rem;
+  color: #444;
+  margin-bottom: 8px;
+}
+/* ===== Next & Back Buttons ===== */
+.btn-next {
+  padding: 10px 18px;
+  background: linear-gradient(135deg, #4f46e5, #3b82f6);
+  border: none;
+  color: #fff;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-next:hover {
+  opacity: 0.9;
+}
+
+.btn-back {
+  padding: 10px 18px;
+  background: #fff;
+  border: 2px solid #9ca3af;
+  color: #374151;
+  font-weight: 600;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.btn-back:hover {
+  background: #f3f4f6;
+}
