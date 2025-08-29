@@ -1170,7 +1170,7 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 .preview-content h3 {
-  margin-top: 10px;
+  margin-top: 2px;
   font-size: 20px;
   color: #222;
 }
