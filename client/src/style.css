@@ -1176,7 +1176,7 @@ input[type="file"]::-webkit-file-upload-button {
 }
 
 .preview-content p {
-  margin: 18px 0;
+  margin: 8px 0;
   color: #444;
   font-size: 14px;
 }
