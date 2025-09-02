@@ -25,7 +25,7 @@ function Support() {
 
         <div className="support-card">
           <span className="icon">📞</span>
-          <h3>Support</h3>
+          <h3>Phone Support</h3>
           <p>Talk to our team</p>
           <p className="highlight">1234567890</p>
           <small>Mon-Fri, 9AM-6PM EST</small>
