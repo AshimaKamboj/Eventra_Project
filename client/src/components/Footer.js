@@ -63,7 +63,7 @@ function Footer() {
       </div>
 
       <div className="footer-bottom">
-        <p>© 2025 Eventra. All rights reserved. Built with ❤️ for amazing events.</p>
+        <p>© 2025 Eventra. All rights reserved. Built with for amazing events.</p>
       </div>
     </footer>
   );
