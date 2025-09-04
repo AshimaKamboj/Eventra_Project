@@ -13,7 +13,7 @@ function Support() {
         </p>
       </section>
 
-     
+      {/* Support Options */}
       <section className="support-options">
         <div className="support-card">
           <span className="icon">📧</span>
