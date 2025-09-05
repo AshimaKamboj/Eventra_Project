@@ -11,7 +11,7 @@ function Support() {
           Get the support you need. Browse our FAQs, contact our team, or start
           a live chat.
         </p>
-      {/* </section> */}
+      </section>
 
       {/* Support Options */}
       <section className="support-options">
