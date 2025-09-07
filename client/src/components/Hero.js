@@ -32,4 +32,4 @@ function Hero() {
 }
 
 export default Hero;
-abcd
+// abcd
