@@ -25,7 +25,7 @@ function Hero() {
       {/* Buttons below search */}
       <div className="hero-buttons">
         {/* <Link to="/explore" className="btn-outline">🎫 Explore Events</Link>
-        <Link to="/create-event" className="btn-outline">➕ Create Event</Link> */}
+        // <Link to="/create-event" className="btn-outline">➕ Create Event</Link> */}
       </div>
     </section>
   );
